@@ -1,0 +1,116 @@
+Задача №1 - ГОСТ Р ИСО/МЭК 27000-2012
+Вам необходимо изучить ГОСТ Р ИСО/МЭК 27000-2012
+
+Ответьте на следующие вопросы:
+
+1. Что СМИБ?
+2. Что такое актив? Какие виды активов бывают? Являются ли сотрудники активом?
+3. Что такое атака?
+4. Какие дополнительные свойства также могут быть включены в понятие информационная безопасность? Что они означают (дайте им определение)?
+5. Что такое риск информационной безопасности?
+
+Решение:
+
+1. система менеджмента информационной безопасности (СМИБ) (information security management system (ISMS): Часть общей системы менеджмента, основанная на подходе бизнес-рисков по созданию, внедрению, функционированию, мониторингу, анализу, поддержке и улучшению информационной безопасности.
+
+2. актив (asset): Что-либо, что имеет ценность для организации.
+
+типы активов:
+- информация;
+- программное обеспечение;
+- материальные активы, например компьютер;
+- услуги;
+- люди и их квалификация, навыки и опыт;
+- нематериальные активы, такие как репутация и имидж.
+
+Сотрудники являются активами.
+
+3. Атака (attack) определена как "попытка уничтожения, раскрытия, изменения, блокирования, кражи, получения несанкционированного доступа к активу или его несанкционированного использования".
+
+4. информационная безопасность (information security): Сохранение конфиденциальности, целостности и доступности информации.
+
+другие свойства:
+-подлинность (authenticity): Свойство, гарантирующее, что субъект или ресурс идентичен заявленному.
+-подотчетность (accountability): Ответственность субъекта за его действия и решения.
+-неотказуемость (non-repudiation): Способность удостоверять имевшее место событие или действие и их субъекты так, чтобы это событие или действие и субъекты, имеющие к нему отношение, не могли быть поставлены под сомнение.
+-достоверность (reliability): Свойство соответствия предусмотренному поведению и результатам.
+
+5. риск (risk): Сочетание вероятности события и его последствий.
+-событие (event): Возникновение специфического набора обстоятельств.
+
+
+Задача №2 - CIS Benchmarks*
+
+вопросы:
+
+1. Сколько configuration profiles определяется в каждом документе? Приведите краткую их характеристику (на что направлены, для чего предназначены)
+2. iOS: из каких соображений рекомендуется отключить опцию Allow Siri while device is locked?
+3. iOS: из каких соображений рекомендуется включить опцию Force fraud warning?
+4. iOS: к каким последствиям приведёт включение опции Maximum number of failed attempts?
+5. Android: из каких соображений рекомендуется включить опцию Allow remote lock and erase?
+6. Android: из каких соображений рекомендуется отключить опцию Make pattern visible? Что из себя представляет shoulder surfing attack?
+7. Android: из каких соображений рекомендуется обеспечить отсутствие Guest profiles?
+
+
+Решение:
+
+1.
+android:
+
+Level 1
+Items in this profile intend to:
+- be practical and prudent;
+- provide a clear security benefit; and
+- not negatively inhibit the utility of the technology beyond acceptable means.
+
+Level 2
+This profile extends the "Level 1" profile. Items in this profile exhibit one or more of
+the following characteristics:
+- are intended for environments or use cases where security is paramount.
+- acts as defense in depth measure.
+- may negatively inhibit the utility or performance of the technology.
+
+iOs
+
+Level 1 - End-User Owned Devices
+Items in this profile apply to end-user owned Apple iOS 13 and iPadOS 13 devices
+and intend to:
+- Be practical and prudent.
+- Provide a clear security benefit.
+- Not inhibit the utility of the technology beyond acceptable means.
+
+Level 2 - End-User Owned Devices
+This profile extends the "Level 1 - End-User Owned Devices" profile. Items in this
+profile apply to end-user owned Apple iOS 13 and iPadOS 13 devices and may:
+- be used for environments or use cases where security is paramount.
+- act as defense in depth measures.
+- negatively inhibit the utility or performance of the technology.
+
+Level 1 - Institutionally Owned Devices
+Items in this profile apply to institutionally owned Apple iOS 13 and iPadOS 13
+devices and intend to:
+- Be practical and prudent.
+- Provide a clear security benefit.
+- Not inhibit the utility of the technology beyond acceptable means.
+
+Level 2 - Institutionally Owned Devices
+This profile extends the "Level 1 - Institutionally Owned Devices" profile. Items in
+this profile apply to end-user owned Apple iOS 13 and iPadOS 13 devices and may:
+- be used for environments or use cases where security is paramount.
+- act as defense in depth measures.
+- negatively inhibit the utility or performance of the technology
+
+2. Access to Siri on a locked device may allow unauthorized users to access information otherwise not available to them. Siri has access to messaging, contacts, and a variety of other data.
+
+3. Fraudulent websites masquerade as legitimate instances of financial, business, and other sensitive sites. They are designed to capture user credentials, often through phishing campaigns. Safari's fraudulent website warning feature helps protect end-users from such sites. 
+Enabling a warning can help you avoid accidentally visiting some known phishing and other fraudulent sites covered by this feature.
+
+4. Excessive incorrect passcode attempts typically indicate that the owner has lost physical control of the device. Upon such an event, erasing the encryption key will help to ensure the confidentiality of information stored on the device.
+
+5. Allow remote lock and erase setting helps you to remotely lock your device or erase your data through Find My Device. This helps you to safeguard your privacy and protect your data from unsanctioned access.
+
+6. Keeping device unlock pattern visible during device unlock can reveal the pattern and is vulnerable to shoulder surfing attack. Hence, do not make the device unlock pattern visible.
+
+«серфинг по плечу» - это метод социальной инженерии, используемый для получения информации, такой как личные идентификационные номера, пароли и другие конфиденциальные данные, путем просмотра через плечо жертвы
+
+7. Users and the guest profile can do most of the same things as the device's owner, but each profile has its own storage space. Guests could install malicious apps or carry out any other malicious activities that may compromise overall device security. Also, Wi-Fi and Bluetooth connections are shared which could give guests unauthorized access to networks/devices that could compromise data. Hence, do not add any guest profiles on the device. If you need to give your device to someone for temporary use, use Screen Pinning to restrict access to the desired app and be in the complete visibility of your device all the time.
